@@ -527,6 +527,12 @@ client :: discover_paths_program(std::vector<std::pair<std::string, node_prog::d
 }
 
 weaver_client_returncode
+client :: discover_all_paths_program(std::vector<std::pair<std::string, node_prog::discover_all_paths_params>> &initial_args, node_prog::discover_all_paths_params &return_param)
+{
+    SPECIFIC_NODE_PROG(node_prog::DISCOVER_ALL_PATHS);
+}
+
+weaver_client_returncode
 client :: get_btc_block_program(std::vector<std::pair<std::string, node_prog::get_btc_block_params>> &initial_args, node_prog::get_btc_block_params &return_param)
 {
     SPECIFIC_NODE_PROG(node_prog::GET_BTC_BLOCK);
